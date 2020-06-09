@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
@@ -12,31 +13,35 @@
     <div class="container">
         <div class="card">
             <div class="row">
-                <div class="col-sm-4 d-flex flex-column justify-content-center text-center">
+                <div class="col-sm-4 justify-content-center text-center">
                     <div id="image">
                         <img src='' class="img-thumbnail img-fluid">
                     </div>
                 </div>
                 <div class="col-sm-8 d-flex flex-column justify-content-center">
                     <div id="title"></div>
-                    <div id="actors"></div>
-                    <div id="awards"></div>
-                    <div id="year"></div>
-                    <div id="boxoffice"></div>
-                    <div id="country"></div>
-                    <div id="director"></div>
                     <div id="genre"></div>
+                    <div id="boxoffice"></div>
+                    <div id="director"></div>
+                    <div id="actors"></div>
+                    <div class="row">
+                        <div class="col-sm-3" id="year"></div>
+                        <div class="col-sm-2" id="runtime"></div>
+                    </div>
+                    <div class="row">
+                        <div id="country" class="col-sm-3"></div>
+                        <div id="awards" class="col-sm-9"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3" id="imdb"></div>
+                        <div class="col-sm-9" id="rt"></div>
+                    </div>
                     <div id="language"></div>
                     <div id="rated"></div>
-                    <div class="row">
-                        <div class="col-sm" id="imdb"></div>
-                        <div class="col-sm" id="rt"></div>
-                        <div class="col-sm" id="meta"></div>
-                    </div>
-                    <div id="runtime"></div>
                     <div id="votes"></div>
                 </div>
             </div>
+            <div id="p">Plot</div>
             <div id="plot"></div>
         </div>
     </div>

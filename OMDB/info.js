@@ -26,19 +26,23 @@ window.onload = async function() {
     console.log(data);
     image.setAttribute("src", data.Poster);
     title.innerHTML = data.Title;
-    actors.innerHTML = data.Actors;
-    awards.innerHTML = data.Awards;
-    boxoffice.innerHTML = data.BoxOffice;
-    country.innerHTML = data.Country;
-    director.innerHTML = data.Director;
-    genre.innerHTML = data.Genre;
-    language.innerHTML = data.Language;
-    rated.innerHTML = data.Rated;
-    imdb.innerHTML = data.Ratings[0].Value;
-    rt.innerHTML = data.Ratings[1].Value;
-    meta.innerHTML = data.Ratings[2].Value;
+    actors.innerHTML = `<span>Cast : &nbsp;</span>${data.Actors}`;
+    awards.innerHTML = `<span><svg class="bi bi-trophy" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
+    <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
+    <path d="M7 10h2v4H7v-4z"/>
+    <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
+  </svg></span><span>&nbsp;  ${data.Awards}</span>`;
+    boxoffice.innerHTML = `<span id="side">Earned :</span> <span id="main">${data.BoxOffice}</span>`;
+    country.innerHTML = `<span><img src="flag.svg" length="25px" width="25px"/></span><span> &nbsp;${data.Country}</span>`;
+    director.innerHTML = `<span>Directors :&nbsp;</span>  ${data.Director}`;
+    genre.innerHTML = `${data.Genre}`;
+    language.innerHTML = `${data.Language}`;
+    rated.innerHTML = `${data.Rated}`;
+    imdb.innerHTML = `Imdb : ${data.Ratings[0].Value}`;
+    rt.innerHTML = `Rotten Tomatoes : ${data.Ratings[1].Value}`;
     runtime.innerHTML = data.Runtime;
-    votes.innerHTML = data.imdbVotes;
-    year.innerHTML = data.Year;
+    votes.innerHTML = `<span>Imdb Votes :</span> &nbsp;${data.imdbVotes}`;
+    year.innerHTML = data.Released;
     plot.innerHTML = data.Plot;
 }
