@@ -2,7 +2,10 @@ let searched = document.querySelector("#searched"); //Search Button
 let input = document.querySelector("#input"); //Form element taking name of movie
 let poster = document.querySelector("#poster"); //for the images from API
 
-searched.addEventListener("click", () => console.log("clicked"));
+searched.addEventListener("click", function() {
+    console.log("clicked");
+    poster.classList.add("design");
+});
 
 searched.addEventListener("click", () => (poster.textContent = "")); // clearing earlier fetched images when new movie searched
 let i;

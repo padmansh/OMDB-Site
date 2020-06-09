@@ -1,95 +1,119 @@
+.body {
+    background: rgb(24, 26, 24);
+    ;
+}
+
 .grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 15px 15px;
-  text-align: center;
-  justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 15px 15px;
+    text-align: center;
+    justify-content: center;
 }
+
+.design {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
 .carousel-item {
-  height: 100vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  background-size: cover;
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    background-size: cover;
 }
+
 .carousel-item .carousel-caption {
-  bottom: 50px;
-  color: white;
+    bottom: 50px;
+    color: white;
 }
+
 .carousel-caption h5 {
-  font-size: 45px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-top: 25px;
-  font-family: "Bitter", serif;
-  font-weight: 700;
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    font-family: "Bitter", serif;
+    font-weight: 700;
 }
+
 .carousel-caption p {
-  width: 60%;
-  margin: auto;
-  font-size: 24px;
-  line-height: 1.9;
-  font-family: "Bitter", serif;
-  font-weight: 400;
+    width: 60%;
+    margin: auto;
+    font-size: 24px;
+    line-height: 1.9;
+    font-family: "Bitter", serif;
+    font-weight: 400;
 }
+
 .carousel-caption a {
-  text-transform: uppercase;
-  background: #262626;
-  padding: 10px 30px;
-  display: inline-block;
-  color: #fff;
-  margin-top: 15px;
+    text-transform: uppercase;
+    background: #262626;
+    padding: 10px 30px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 15px;
 }
+
 .navbar-nav a {
-  font-family: consolas;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: bold;
+    font-family: consolas;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
+
 .navbar-light .navbar-brand {
-  color: #fff;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 2px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
-.navbar-light .navbar-nav .nav-link {
-  color: #fff;
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
 }
+
 .navbar-nav {
-  text-align: center;
+    text-align: center;
 }
+
 .nav-link {
-  padding: 0.2rem 1rem;
+    padding: 0.2rem 1rem;
 }
+
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #fff !important;
+    color: #fff !important;
 }
+
 .w-100 {
-  height: 100vh;
+    height: 100vh;
 }
+
 #input {
-  border-radius: 12px;
-  width: 250px !important;
-  font-size: 18px;
-}
-@media only screen and (max-width: 767px) {
-  .navbar-nav.ml-auto {
-    background: rgba(0, 0, 0, 0.5);
-  }
-  .naabar-toggler {
-    padding: 1px 5px;
+    border-radius: 12px;
+    width: 250px !important;
     font-size: 18px;
-    line-height: 0.3;
-    background: #fff;
-  }
-  .carousel-caption h5 {
-    font-size: 14px;
-  }
-  .carousel-caption p {
-    font-size: 10px;
-  }
-  .carousel-caption a {
-    padding: 5px;
-  }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav.ml-auto {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .naabar-toggler {
+        padding: 1px 5px;
+        font-size: 18px;
+        line-height: 0.3;
+        background: #fff;
+    }
+    .carousel-caption h5 {
+        font-size: 14px;
+    }
+    .carousel-caption p {
+        font-size: 10px;
+    }
+    .carousel-caption a {
+        padding: 5px;
+    }
 }
