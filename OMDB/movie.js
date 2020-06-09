@@ -26,7 +26,7 @@ searched.addEventListener("click", async function(event) {
     for (i = 0; i < data.Search.length; i++) {
         (function(index) {
             image[index].addEventListener("click", () => { // adds click event on each poster displayed
-                let link = `http://www.omdbapi.com/?t=${data.Search[index].Title}&apikey=e10b009d&`; // link to fetch details on info page
+                let link = `http://www.omdbapi.com/?t=${data.Search[index].Title}&apikey=e10b009d&plot=full&`; // link to fetch details on info page
                 window.open("./info.html" + '?link=' + link); // opens new info page in new window
                 console.log(link); // link print for check
                 //localStorage.setItem("locallink", link);
