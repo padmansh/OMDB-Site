@@ -4,7 +4,7 @@ let poster = document.querySelector("#poster"); //for the images from API
 
 searched.addEventListener("click", () => console.log("clicked"));
 
-searched.addEventListener("click", () => poster.textContent = ""); // clearing earlier fetched images when new movie searched
+searched.addEventListener("click", () => (poster.textContent = "")); // clearing earlier fetched images when new movie searched
 let i;
 searched.addEventListener("click", async function(event) {
     event.preventDefault();
