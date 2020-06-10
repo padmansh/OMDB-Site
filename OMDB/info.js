@@ -34,7 +34,6 @@ window.onload = async function () {
     <path d="M7 10h2v4H7v-4z"/>
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
   </svg></span><span>&nbsp;  ${data.Awards}</span>`;
-<<<<<<< HEAD
   boxoffice.innerHTML = `<span id="side">Earned :</span> <span id="main">${data.BoxOffice}</span>`;
   country.innerHTML = `<span><img src="flag.svg" length="25px" width="25px"/></span><span> &nbsp;${data.Country}</span>`;
   director.innerHTML = `<span>Directors :&nbsp;</span>  ${data.Director}`;
@@ -48,19 +47,3 @@ window.onload = async function () {
   year.innerHTML = data.Released;
   plot.innerHTML = data.Plot;
 };
-=======
-    boxoffice.innerHTML = `<span id="side">Earned :</span> <span id="main">${data.BoxOffice}</span>`;
-    country.innerHTML = `<span><img src="flag.svg" length="25px" width="25px"/></span><span> &nbsp;${data.Country}</span>`;
-    director.innerHTML = `<span>Directors :&nbsp;</span>  ${data.Director}`;
-    genre.innerHTML = `${data.Genre}`;
-    language.innerHTML = `${data.Language}`;
-    rated.innerHTML = `${data.Rated}`;
-    imdb.innerHTML = `Imdb : ${data.Ratings[0].Value}`;
-    rt.innerHTML = `Rotten Tomatoes : ${data.Ratings[1].Value}`;
-    runtime.innerHTML = data.Runtime;
-    votes.innerHTML = `<span>Imdb Votes :</span> &nbsp;${data.imdbVotes}`;
-    year.innerHTML = data.Released;
-    p.innerHTML = `Plot :`;
-    plot.innerHTML = data.Plot;
-}
->>>>>>> upstream/master
