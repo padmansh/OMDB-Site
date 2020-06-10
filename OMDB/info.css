@@ -1,4 +1,4 @@
-.card {
+#card {
     margin-top: 6%;
     margin-bottom: 5%;
     padding-top: 3%;
@@ -119,8 +119,14 @@ body {
     box-shadow: 5px 5px 5px black;
 }
 
-@media only screen and (max-width: 962px) {
-    body {
-        line-height: 100px;
-    }
+#plot {
+    line-height: 25px;
+}
+
+#genre {
+    line-height: 25px;
+}
+
+#title {
+    line-height: 25px;
 }

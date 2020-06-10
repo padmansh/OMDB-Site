@@ -15,6 +15,7 @@ let runtime = document.querySelector("#runtime");
 let votes = document.querySelector("#votes");
 let year = document.querySelector("#year");
 let plot = document.querySelector("#plot");
+let p = document.querySelector("#p");
 
 console.log(flink);
 
@@ -44,5 +45,6 @@ window.onload = async function() {
     runtime.innerHTML = data.Runtime;
     votes.innerHTML = `<span>Imdb Votes :</span> &nbsp;${data.imdbVotes}`;
     year.innerHTML = data.Released;
+    p.innerHTML = `Plot :`;
     plot.innerHTML = data.Plot;
 }
