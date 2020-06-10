@@ -3,14 +3,10 @@ let input = document.querySelector("#input"); //Form element taking name of movi
 // let poster = document.querySelector("#poster"); //for the images from API
 let result = document.querySelector(".result");
 
-searched.addEventListener("click", function () {
-  console.log("clicked");
-  //   poster.classList.add("design");
-});
-
 searched.addEventListener("click", () => (result.textContent = "")); // clearing earlier fetched images when new movie searched
 let i;
 searched.addEventListener("click", async function (event) {
+  result.classList.add("display");
   event.preventDefault();
   let title = input.value;
   let res = await fetch(` http://www.omdbapi.com/?s=${title}&apikey=e10b009d&`);

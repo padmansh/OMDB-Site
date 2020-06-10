@@ -1,6 +1,9 @@
 .body {
   background: rgb(24, 26, 24);
 }
+body {
+  background: #171717;
+}
 /* 
 .grid-container {
     display: grid;
@@ -102,14 +105,25 @@
 .bg-dark {
   transition: 450ms ease-in;
   box-shadow: 0 3px 20px rgba(black, 0.2);
+  background-color: #171717 !important;
 }
 .result {
   width: 80%;
   margin: 20px auto;
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-top: 6%;
+  margin-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  padding-right: 2%;
+  padding-left: 2%;
+  box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.678);
+  background-color: rgb(255, 255, 255);
+  background-image: url(https://wallpaperplay.com/walls/full/e/e/a/33401.jpg);
+  line-height: 40px;
 }
 
 .card {
@@ -129,7 +143,9 @@
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   cursor: pointer;
 }
-
+.display {
+  display: flex;
+}
 .card-image {
   display: flex;
   justify-content: center;
