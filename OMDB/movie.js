@@ -20,6 +20,11 @@ searched.addEventListener("click", async function (event) {
   console.log(res);
   let data = await res.json();
   console.log(data);
+  if (data.Error) {
+    $("#noResults").modal("show");
+    result.classList.remove("display");
+    return;
+  }
   for (let i = 0; i < data.Search.length; i++) {
     let card = document.createElement("div");
     card.classList.add("card");
