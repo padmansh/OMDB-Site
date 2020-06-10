@@ -9,6 +9,13 @@ searched.addEventListener("click", async function (event) {
   result.classList.add("display");
   event.preventDefault();
   let title = input.value;
+  if (!title) {
+    // $("#myModal").modal(options);
+    $("#myModal").modal("show");
+    // alert("Enter Something");
+    result.classList.remove("display");
+    return;
+  }
   let res = await fetch(` http://www.omdbapi.com/?s=${title}&apikey=e10b009d&`);
   console.log(res);
   let data = await res.json();
